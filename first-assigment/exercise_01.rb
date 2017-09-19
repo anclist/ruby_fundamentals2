@@ -8,8 +8,15 @@ book = "To Kill a Mockingbird by Harper Lee"
 
 #Asking the tree questions
 puts "Do you like Documentaries?"
-  docu_answer = gets.chomp.to_s
+  first_answer = gets.chomp.to_s
 puts  "Do you like Dramas?"
-  drama_answer = gets.chomp.to_s
+  second_answer = gets.chomp.to_s
 puts"Do you like Comedies?"
-  comedy_answer = gest.chomp.to_s
+  third_answer = gets.chomp.to_s
+
+if first_answer == "yes"
+  puts "Since you like documetaries, I recommend whatching #{documentary}!"
+elsif second_answer == "yes" && third_answer == "yes"
+  puts "Since you don't like documentaries, but you like dramas and comedies, I recommend whatching #{dramedy}"
+
+end
